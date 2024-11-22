@@ -56,7 +56,7 @@
             // 
             // previewPanel
             // 
-            previewPanel.BackColor = Color.Gold;
+            previewPanel.BackColor = SystemColors.GradientActiveCaption;
             previewPanel.Controls.Add(previewDescription);
             previewPanel.Controls.Add(previewTitle);
             previewPanel.Location = new Point(27, 73);
@@ -97,7 +97,7 @@
             // printerPicture
             // 
             printerPicture.Image = (Image)resources.GetObject("printerPicture.Image");
-            printerPicture.Location = new Point(829, 73);
+            printerPicture.Location = new Point(570, 73);
             printerPicture.Name = "printerPicture";
             printerPicture.Size = new Size(302, 302);
             printerPicture.SizeMode = PictureBoxSizeMode.Zoom;
@@ -108,7 +108,7 @@
             // 
             printerName.AutoSize = true;
             printerName.Font = new Font("Segoe UI Semibold", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            printerName.Location = new Point(897, 73);
+            printerName.Location = new Point(638, 73);
             printerName.Name = "printerName";
             printerName.Size = new Size(173, 37);
             printerName.TabIndex = 3;
@@ -127,7 +127,7 @@
             // titleTextBox
             // 
             titleTextBox.Font = new Font("Segoe UI", 12F);
-            titleTextBox.Location = new Point(27, 361);
+            titleTextBox.Location = new Point(27, 356);
             titleTextBox.MaxLength = 32;
             titleTextBox.Name = "titleTextBox";
             titleTextBox.ScrollBars = ScrollBars.Horizontal;
@@ -158,7 +158,7 @@
             // printButton
             // 
             printButton.Font = new Font("Britannic Bold", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            printButton.Location = new Point(829, 513);
+            printButton.Location = new Point(570, 513);
             printButton.Name = "printButton";
             printButton.Size = new Size(302, 73);
             printButton.TabIndex = 2;
@@ -171,7 +171,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
-            ClientSize = new Size(1154, 611);
+            ClientSize = new Size(893, 611);
             Controls.Add(printButton);
             Controls.Add(descriptionTextBox);
             Controls.Add(description);
