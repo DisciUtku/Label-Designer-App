@@ -33,7 +33,14 @@
             previewPanel = new Panel();
             printerPicture = new PictureBox();
             printerName = new Label();
-            label1 = new Label();
+            title = new Label();
+            titleTextBox = new TextBox();
+            descriptionTextBox = new TextBox();
+            description = new Label();
+            printButton = new Button();
+            previewTitle = new Label();
+            previewDescription = new Label();
+            previewPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)printerPicture).BeginInit();
             SuspendLayout();
             // 
@@ -50,6 +57,8 @@
             // previewPanel
             // 
             previewPanel.BackColor = Color.Gold;
+            previewPanel.Controls.Add(previewDescription);
+            previewPanel.Controls.Add(previewTitle);
             previewPanel.Location = new Point(27, 73);
             previewPanel.Name = "previewPanel";
             previewPanel.Size = new Size(377, 189);
@@ -75,15 +84,74 @@
             printerName.TabIndex = 3;
             printerName.Text = "printerName";
             // 
-            // label1
+            // title
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label1.Location = new Point(27, 295);
-            label1.Name = "label1";
-            label1.Size = new Size(159, 45);
-            label1.TabIndex = 4;
-            label1.Text = "Önizleme";
+            title.AutoSize = true;
+            title.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            title.Location = new Point(27, 312);
+            title.Name = "title";
+            title.Size = new Size(80, 32);
+            title.TabIndex = 4;
+            title.Text = "Başlık";
+            // 
+            // titleTextBox
+            // 
+            titleTextBox.Font = new Font("Segoe UI", 12F);
+            titleTextBox.Location = new Point(27, 361);
+            titleTextBox.Name = "titleTextBox";
+            titleTextBox.ScrollBars = ScrollBars.Horizontal;
+            titleTextBox.Size = new Size(377, 29);
+            titleTextBox.TabIndex = 5;
+            // 
+            // descriptionTextBox
+            // 
+            descriptionTextBox.Font = new Font("Segoe UI", 12F);
+            descriptionTextBox.Location = new Point(27, 471);
+            descriptionTextBox.Multiline = true;
+            descriptionTextBox.Name = "descriptionTextBox";
+            descriptionTextBox.ScrollBars = ScrollBars.Horizontal;
+            descriptionTextBox.Size = new Size(377, 115);
+            descriptionTextBox.TabIndex = 7;
+            // 
+            // description
+            // 
+            description.AutoSize = true;
+            description.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            description.Location = new Point(27, 422);
+            description.Name = "description";
+            description.Size = new Size(118, 32);
+            description.TabIndex = 6;
+            description.Text = "Açıklama";
+            // 
+            // printButton
+            // 
+            printButton.Font = new Font("Britannic Bold", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            printButton.Location = new Point(829, 513);
+            printButton.Name = "printButton";
+            printButton.Size = new Size(302, 73);
+            printButton.TabIndex = 8;
+            printButton.Text = "YAZDIR";
+            printButton.UseVisualStyleBackColor = true;
+            // 
+            // previewTitle
+            // 
+            previewTitle.AutoSize = true;
+            previewTitle.Font = new Font("Segoe UI", 15F);
+            previewTitle.Location = new Point(114, 21);
+            previewTitle.Name = "previewTitle";
+            previewTitle.Size = new Size(114, 28);
+            previewTitle.TabIndex = 0;
+            previewTitle.Text = "previewText";
+            // 
+            // previewDescription
+            // 
+            previewDescription.AutoSize = true;
+            previewDescription.Font = new Font("Segoe UI", 15F);
+            previewDescription.Location = new Point(67, 77);
+            previewDescription.Name = "previewDescription";
+            previewDescription.Size = new Size(214, 28);
+            previewDescription.TabIndex = 1;
+            previewDescription.Text = "previewDescriptionText";
             // 
             // DesignerScreen
             // 
@@ -91,13 +159,19 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
             ClientSize = new Size(1154, 611);
-            Controls.Add(label1);
+            Controls.Add(printButton);
+            Controls.Add(descriptionTextBox);
+            Controls.Add(description);
+            Controls.Add(titleTextBox);
+            Controls.Add(title);
             Controls.Add(printerName);
             Controls.Add(printerPicture);
             Controls.Add(previewPanel);
             Controls.Add(preview);
             Name = "DesignerScreen";
             Text = "Label Designer by ErgoSoft";
+            previewPanel.ResumeLayout(false);
+            previewPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)printerPicture).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -109,6 +183,12 @@
         private Panel previewPanel;
         private PictureBox printerPicture;
         private Label printerName;
-        private Label label1;
+        private Label title;
+        private TextBox titleTextBox;
+        private TextBox descriptionTextBox;
+        private Label description;
+        private Button printButton;
+        private Label previewTitle;
+        private Label previewDescription;
     }
 }

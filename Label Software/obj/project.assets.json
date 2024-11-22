@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ergos\\source\\repos\\Label Software\\Label Software\\Label Software.csproj",
+      "projectUniqueName": "C:\\Users\\ergos\\OneDrive\\Belgeler\\Label Designer App\\Label-Designer-App\\Label Software\\Label Software.csproj",
       "projectName": "Label Software",
-      "projectPath": "C:\\Users\\ergos\\source\\repos\\Label Software\\Label Software\\Label Software.csproj",
+      "projectPath": "C:\\Users\\ergos\\OneDrive\\Belgeler\\Label Designer App\\Label-Designer-App\\Label Software\\Label Software.csproj",
       "packagesPath": "C:\\Users\\ergos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ergos\\source\\repos\\Label Software\\Label Software\\obj\\",
+      "outputPath": "C:\\Users\\ergos\\OneDrive\\Belgeler\\Label Designer App\\Label-Designer-App\\Label Software\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ergos\\AppData\\Roaming\\NuGet\\NuGet.Config"
