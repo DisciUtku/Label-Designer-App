@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Label Software")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d236de2b8eddb1f896b02f3ee4547d3f5977dc60")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+369c60f6fd66b78d21527b7b2806d0a0b5e41597")]
 [assembly: System.Reflection.AssemblyProductAttribute("Label Software")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Label Software")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

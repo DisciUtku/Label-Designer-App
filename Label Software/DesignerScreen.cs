@@ -19,6 +19,17 @@ namespace Label_Software
             // TextChanged olaylarını bağla
             titleTextBox.TextChanged += TitleTextBox_TextChanged;
             descriptionTextBox.TextChanged += DescriptionTextBox_TextChanged;
+
+            // RichTextBox ayarları
+            previewTitle.Multiline = true;
+            previewTitle.WordWrap = false;  // WordWrap'ı false yaparak sadece bir satırda yazı olmasını sağlıyoruz
+            previewTitle.ScrollBars = RichTextBoxScrollBars.None; // Scrollbars None olarak ayarlandı
+            previewTitle.SelectionAlignment = HorizontalAlignment.Center; // Metin hizalama
+
+            previewDescription.Multiline = true;
+            previewDescription.WordWrap = true;
+            previewDescription.ScrollBars = RichTextBoxScrollBars.None; // Scrollbars None olarak ayarlandı
+            previewDescription.SelectionAlignment = HorizontalAlignment.Center; // Metin hizalama
         }
 
         private void TitleTextBox_TextChanged(object sender, EventArgs e)
@@ -42,17 +53,43 @@ namespace Label_Software
             line2 = AdjustTextToFitLabel(line2, previewDescription.Width, previewDescription.Font);
 
             // Önizleme alanını güncelle
-            previewTitle.Text = $"{line1}";
-            previewDescription.Text = $"{line2}";
+            previewTitle.Text = line1;
+            previewDescription.Text = line2;
+
+            // previewDescription'ın satır sayısını hesapla
+            int maxDescLines = previewDescription.Height / previewDescription.Font.Height;
+            int descLineCount = CountLines(previewDescription.Text);
+
+            // Eğer previewDescription'da satır sayısı limitin üzerine çıkarsa, yazıyı engelle
+            if (descLineCount > maxDescLines)
+            {
+                // Son karakteri silerek daha fazla yazıyı engelle
+                descriptionTextBox.Text = descriptionTextBox.Text.Substring(0, descriptionTextBox.Text.Length - 1);
+                descriptionTextBox.SelectionStart = descriptionTextBox.Text.Length; // Cursor son pozisyonda
+                MessageBox.Show("Açıklama için maksimum satır sayısına ulaşıldı. Daha fazla karakter eklenemez.");
+            }
         }
 
         private string AdjustTextToFitLabel(string text, int labelWidth, Font font)
         {
-            // Label'in genişliğine sığacak şekilde metni satırlara ayır
+            // Eğer previewTitle ise, yalnızca bir satırda sığmasını sağla
+            if (font == previewTitle.Font) // Bu, sadece previewTitle için geçerli
+            {
+                // Metni keserek sadece bir satıra sığacak şekilde düzenle
+                string testText = text;
+                while (TextRenderer.MeasureText(testText, font).Width > labelWidth)
+                {
+                    testText = testText.Substring(0, testText.Length - 1); // Fazla karakteri çıkar
+                }
+                return testText;
+            }
+
+            // RichTextBox içinde metnin düzgün sarması için metni satırlara ayır
             StringBuilder sb = new StringBuilder();
             string[] words = text.Split(' '); // Kelimeleri ayır
 
             StringBuilder currentLine = new StringBuilder();
+
             foreach (string word in words)
             {
                 string testLine = currentLine.Length == 0 ? word : currentLine + " " + word;
@@ -60,19 +97,20 @@ namespace Label_Software
                 // Test satırının genişliğini ölç
                 int width = TextRenderer.MeasureText(testLine, font).Width;
 
-                // Eğer metin label genişliğini aşarsa, yeni satıra geç
-                if (width <= labelWidth)
+                // Eğer metin label genişliğini aşarsa, mevcut satırdaki metni ekle ve yeni satıra geç
+                if (width > labelWidth)
                 {
-                    if (currentLine.Length > 0)
-                        currentLine.Append(" "); // Kelimeler arasında boşluk bırak
-                    currentLine.Append(word); // Kelimeyi ekle
-                }
-                else
-                {
-                    // Eğer eklemek mümkün değilse, mevcut satırdaki metni ekle ve yeni satıra geç
+                    // Mevcut satır uzunluğu label genişliğini geçtiğinde, mevcut satırı ekle ve yeni satıra geç
                     sb.AppendLine(currentLine.ToString());
                     currentLine.Clear();
                     currentLine.Append(word); // Yeni satır başında kelimeyi ekle
+                }
+                else
+                {
+                    // Eğer metin mevcut satıra sığıyorsa, kelimeyi ekle
+                    if (currentLine.Length > 0)
+                        currentLine.Append(" "); // Kelimeler arasında boşluk bırak
+                    currentLine.Append(word); // Kelimeyi ekle
                 }
             }
 
@@ -83,6 +121,12 @@ namespace Label_Software
             }
 
             return sb.ToString();
+        }
+
+        private int CountLines(string text)
+        {
+            // Text'i satırlara ayırarak satır sayısını hesapla
+            return text.Split(new string[] { "\r\n", "\n" }, StringSplitOptions.None).Length;
         }
 
         private void printButton_Click(object sender, EventArgs e)

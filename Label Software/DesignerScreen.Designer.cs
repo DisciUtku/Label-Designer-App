@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DesignerScreen));
             preview = new Label();
             previewPanel = new Panel();
-            previewDescription = new Label();
-            previewTitle = new Label();
+            previewDescription = new RichTextBox();
+            previewTitle = new RichTextBox();
             printerPicture = new PictureBox();
             printerName = new Label();
             title = new Label();
@@ -66,25 +66,33 @@
             // 
             // previewDescription
             // 
-            previewDescription.AutoSize = true;
-            previewDescription.Font = new Font("Segoe UI", 15F);
-            previewDescription.Location = new Point(17, 82);
+            previewDescription.BackColor = Color.Gold;
+            previewDescription.BorderStyle = BorderStyle.None;
+            previewDescription.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            previewDescription.Location = new Point(23, 68);
+            previewDescription.MaxLength = 32;
+            previewDescription.Multiline = false;
             previewDescription.Name = "previewDescription";
-            previewDescription.Size = new Size(214, 28);
-            previewDescription.TabIndex = 1;
-            previewDescription.Text = "previewDescriptionText";
-            previewDescription.TextAlign = ContentAlignment.MiddleCenter;
+            previewDescription.ReadOnly = true;
+            previewDescription.ScrollBars = RichTextBoxScrollBars.None;
+            previewDescription.Size = new Size(328, 106);
+            previewDescription.TabIndex = 10;
+            previewDescription.Text = "";
             // 
             // previewTitle
             // 
-            previewTitle.AutoSize = true;
-            previewTitle.Font = new Font("Segoe UI", 15F);
-            previewTitle.Location = new Point(17, 21);
+            previewTitle.BackColor = Color.Gold;
+            previewTitle.BorderStyle = BorderStyle.None;
+            previewTitle.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            previewTitle.Location = new Point(60, 17);
+            previewTitle.MaxLength = 32;
+            previewTitle.Multiline = false;
             previewTitle.Name = "previewTitle";
-            previewTitle.Size = new Size(114, 28);
-            previewTitle.TabIndex = 0;
-            previewTitle.Text = "previewText";
-            previewTitle.TextAlign = ContentAlignment.MiddleCenter;
+            previewTitle.ReadOnly = true;
+            previewTitle.ScrollBars = RichTextBoxScrollBars.None;
+            previewTitle.Size = new Size(248, 29);
+            previewTitle.TabIndex = 9;
+            previewTitle.Text = "";
             // 
             // printerPicture
             // 
@@ -124,7 +132,7 @@
             titleTextBox.Name = "titleTextBox";
             titleTextBox.ScrollBars = ScrollBars.Horizontal;
             titleTextBox.Size = new Size(272, 29);
-            titleTextBox.TabIndex = 5;
+            titleTextBox.TabIndex = 0;
             // 
             // descriptionTextBox
             // 
@@ -135,7 +143,7 @@
             descriptionTextBox.Name = "descriptionTextBox";
             descriptionTextBox.ScrollBars = ScrollBars.Horizontal;
             descriptionTextBox.Size = new Size(272, 115);
-            descriptionTextBox.TabIndex = 7;
+            descriptionTextBox.TabIndex = 1;
             // 
             // description
             // 
@@ -153,7 +161,7 @@
             printButton.Location = new Point(829, 513);
             printButton.Name = "printButton";
             printButton.Size = new Size(302, 73);
-            printButton.TabIndex = 8;
+            printButton.TabIndex = 2;
             printButton.Text = "YAZDIR";
             printButton.UseVisualStyleBackColor = true;
             printButton.Click += printButton_Click;
@@ -176,7 +184,6 @@
             Name = "DesignerScreen";
             Text = "Label Designer by ErgoSoft";
             previewPanel.ResumeLayout(false);
-            previewPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)printerPicture).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -193,7 +200,7 @@
         private TextBox descriptionTextBox;
         private Label description;
         private Button printButton;
-        private Label previewTitle;
-        private Label previewDescription;
+        private RichTextBox previewTitle;
+        private RichTextBox previewDescription;
     }
 }
