@@ -16,3 +16,21 @@ C:\Users\ergos\source\repos\Label Software\Label Software\obj\Debug\net8.0-windo
 C:\Users\ergos\source\repos\Label Software\Label Software\obj\Debug\net8.0-windows\Label Software.genruntimeconfig.cache
 C:\Users\ergos\source\repos\Label Software\Label Software\obj\Debug\net8.0-windows\ref\Label Software.dll
 C:\Users\ergos\source\repos\Label Software\Label Software\obj\Debug\net8.0-windows\Label_Software.DesignerScreen.resources
+C:\Users\ergos\OneDrive\Belgeler\Label Designer App\Label-Designer-App\Label Software\obj\Debug\net8.0-windows\Label_Software.DesignerScreen.resources
+C:\Users\ergos\OneDrive\Belgeler\Label Designer App\Label-Designer-App\Label Software\obj\Debug\net8.0-windows\Label_Software.Properties.Resources.resources
+C:\Users\ergos\OneDrive\Belgeler\Label Designer App\Label-Designer-App\Label Software\obj\Debug\net8.0-windows\Label Software.csproj.GenerateResource.cache
+C:\Users\ergos\OneDrive\Belgeler\Label Designer App\Label-Designer-App\Label Software\obj\Debug\net8.0-windows\Label Software.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ergos\OneDrive\Belgeler\Label Designer App\Label-Designer-App\Label Software\obj\Debug\net8.0-windows\Label Software.AssemblyInfoInputs.cache
+C:\Users\ergos\OneDrive\Belgeler\Label Designer App\Label-Designer-App\Label Software\obj\Debug\net8.0-windows\Label Software.AssemblyInfo.cs
+C:\Users\ergos\OneDrive\Belgeler\Label Designer App\Label-Designer-App\Label Software\obj\Debug\net8.0-windows\Label Software.csproj.CoreCompileInputs.cache
+C:\Users\ergos\OneDrive\Belgeler\Label Designer App\Label-Designer-App\Label Software\obj\Debug\net8.0-windows\Label Software.sourcelink.json
+C:\Users\ergos\OneDrive\Belgeler\Label Designer App\Label-Designer-App\Label Software\obj\Debug\net8.0-windows\Label Software.dll
+C:\Users\ergos\OneDrive\Belgeler\Label Designer App\Label-Designer-App\Label Software\obj\Debug\net8.0-windows\refint\Label Software.dll
+C:\Users\ergos\OneDrive\Belgeler\Label Designer App\Label-Designer-App\Label Software\obj\Debug\net8.0-windows\Label Software.pdb
+C:\Users\ergos\OneDrive\Belgeler\Label Designer App\Label-Designer-App\Label Software\bin\Debug\net8.0-windows\Label Software.exe
+C:\Users\ergos\OneDrive\Belgeler\Label Designer App\Label-Designer-App\Label Software\bin\Debug\net8.0-windows\Label Software.deps.json
+C:\Users\ergos\OneDrive\Belgeler\Label Designer App\Label-Designer-App\Label Software\bin\Debug\net8.0-windows\Label Software.runtimeconfig.json
+C:\Users\ergos\OneDrive\Belgeler\Label Designer App\Label-Designer-App\Label Software\bin\Debug\net8.0-windows\Label Software.dll
+C:\Users\ergos\OneDrive\Belgeler\Label Designer App\Label-Designer-App\Label Software\bin\Debug\net8.0-windows\Label Software.pdb
+C:\Users\ergos\OneDrive\Belgeler\Label Designer App\Label-Designer-App\Label Software\obj\Debug\net8.0-windows\Label Software.genruntimeconfig.cache
+C:\Users\ergos\OneDrive\Belgeler\Label Designer App\Label-Designer-App\Label Software\obj\Debug\net8.0-windows\ref\Label Software.dll

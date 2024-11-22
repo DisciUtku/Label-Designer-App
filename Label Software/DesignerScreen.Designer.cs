@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DesignerScreen));
             preview = new Label();
             previewPanel = new Panel();
+            previewDescription = new Label();
+            previewTitle = new Label();
             printerPicture = new PictureBox();
             printerName = new Label();
             title = new Label();
@@ -38,8 +40,6 @@
             descriptionTextBox = new TextBox();
             description = new Label();
             printButton = new Button();
-            previewTitle = new Label();
-            previewDescription = new Label();
             previewPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)printerPicture).BeginInit();
             SuspendLayout();
@@ -63,6 +63,28 @@
             previewPanel.Name = "previewPanel";
             previewPanel.Size = new Size(377, 189);
             previewPanel.TabIndex = 1;
+            // 
+            // previewDescription
+            // 
+            previewDescription.AutoSize = true;
+            previewDescription.Font = new Font("Segoe UI", 15F);
+            previewDescription.Location = new Point(17, 82);
+            previewDescription.Name = "previewDescription";
+            previewDescription.Size = new Size(214, 28);
+            previewDescription.TabIndex = 1;
+            previewDescription.Text = "previewDescriptionText";
+            previewDescription.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // previewTitle
+            // 
+            previewTitle.AutoSize = true;
+            previewTitle.Font = new Font("Segoe UI", 15F);
+            previewTitle.Location = new Point(17, 21);
+            previewTitle.Name = "previewTitle";
+            previewTitle.Size = new Size(114, 28);
+            previewTitle.TabIndex = 0;
+            previewTitle.Text = "previewText";
+            previewTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // printerPicture
             // 
@@ -98,19 +120,21 @@
             // 
             titleTextBox.Font = new Font("Segoe UI", 12F);
             titleTextBox.Location = new Point(27, 361);
+            titleTextBox.MaxLength = 32;
             titleTextBox.Name = "titleTextBox";
             titleTextBox.ScrollBars = ScrollBars.Horizontal;
-            titleTextBox.Size = new Size(377, 29);
+            titleTextBox.Size = new Size(272, 29);
             titleTextBox.TabIndex = 5;
             // 
             // descriptionTextBox
             // 
             descriptionTextBox.Font = new Font("Segoe UI", 12F);
             descriptionTextBox.Location = new Point(27, 471);
+            descriptionTextBox.MaxLength = 100;
             descriptionTextBox.Multiline = true;
             descriptionTextBox.Name = "descriptionTextBox";
             descriptionTextBox.ScrollBars = ScrollBars.Horizontal;
-            descriptionTextBox.Size = new Size(377, 115);
+            descriptionTextBox.Size = new Size(272, 115);
             descriptionTextBox.TabIndex = 7;
             // 
             // description
@@ -132,26 +156,7 @@
             printButton.TabIndex = 8;
             printButton.Text = "YAZDIR";
             printButton.UseVisualStyleBackColor = true;
-            // 
-            // previewTitle
-            // 
-            previewTitle.AutoSize = true;
-            previewTitle.Font = new Font("Segoe UI", 15F);
-            previewTitle.Location = new Point(114, 21);
-            previewTitle.Name = "previewTitle";
-            previewTitle.Size = new Size(114, 28);
-            previewTitle.TabIndex = 0;
-            previewTitle.Text = "previewText";
-            // 
-            // previewDescription
-            // 
-            previewDescription.AutoSize = true;
-            previewDescription.Font = new Font("Segoe UI", 15F);
-            previewDescription.Location = new Point(67, 77);
-            previewDescription.Name = "previewDescription";
-            previewDescription.Size = new Size(214, 28);
-            previewDescription.TabIndex = 1;
-            previewDescription.Text = "previewDescriptionText";
+            printButton.Click += printButton_Click;
             // 
             // DesignerScreen
             // 

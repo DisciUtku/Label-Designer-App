@@ -1,10 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ergos\\source\\repos\\Label Software\\",
+  "WorkspaceRootPath": "C:\\Users\\ergos\\OneDrive\\Belgeler\\Label Designer App\\Label-Designer-App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CA4E3738-7451-452F-A020-79160359F0DC}|Label Software\\Label Software.csproj|c:\\users\\ergos\\source\\repos\\label software\\label software\\designerscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{CA4E3738-7451-452F-A020-79160359F0DC}|Label Software\\Label Software.csproj|c:\\users\\ergos\\onedrive\\belgeler\\label designer app\\label-designer-app\\label software\\designerscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA4E3738-7451-452F-A020-79160359F0DC}|Label Software\\Label Software.csproj|solutionrelative:label software\\designerscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA4E3738-7451-452F-A020-79160359F0DC}|Label Software\\Label Software.csproj|c:\\users\\ergos\\onedrive\\belgeler\\label designer app\\label-designer-app\\label software\\designerscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{CA4E3738-7451-452F-A020-79160359F0DC}|Label Software\\Label Software.csproj|solutionrelative:label software\\designerscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA4E3738-7451-452F-A020-79160359F0DC}|Label Software\\Label Software.csproj|c:\\users\\ergos\\onedrive\\belgeler\\label designer app\\label-designer-app\\label software\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA4E3738-7451-452F-A020-79160359F0DC}|Label Software\\Label Software.csproj|solutionrelative:label software\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DesignerScreen.cs [Tasar\u0131m]",
-              "DocumentMoniker": "C:\\Users\\ergos\\source\\repos\\Label Software\\Label Software\\DesignerScreen.cs",
-              "RelativeDocumentMoniker": "Label Software\\DesignerScreen.cs",
-              "ToolTip": "C:\\Users\\ergos\\source\\repos\\Label Software\\Label Software\\DesignerScreen.cs [Tasar\u0131m]*",
-              "RelativeToolTip": "Label Software\\DesignerScreen.cs [Tasar\u0131m]*",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ergos\\OneDrive\\Belgeler\\Label Designer App\\Label-Designer-App\\Label Software\\Program.cs",
+              "RelativeDocumentMoniker": "Label Software\\Program.cs",
+              "ToolTip": "C:\\Users\\ergos\\OneDrive\\Belgeler\\Label Designer App\\Label-Designer-App\\Label Software\\Program.cs",
+              "RelativeToolTip": "Label Software\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T08:26:03.608Z",
+              "WhenOpened": "2024-11-22T09:23:32.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DesignerScreen.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\ergos\\OneDrive\\Belgeler\\Label Designer App\\Label-Designer-App\\Label Software\\DesignerScreen.cs",
+              "RelativeDocumentMoniker": "Label Software\\DesignerScreen.cs",
+              "ToolTip": "C:\\Users\\ergos\\OneDrive\\Belgeler\\Label Designer App\\Label-Designer-App\\Label Software\\DesignerScreen.cs [Tasar\u0131m]",
+              "RelativeToolTip": "Label Software\\DesignerScreen.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T09:25:55.261Z",
               "EditorCaption": " [Tasar\u0131m]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DesignerScreen.cs",
+              "DocumentMoniker": "C:\\Users\\ergos\\OneDrive\\Belgeler\\Label Designer App\\Label-Designer-App\\Label Software\\DesignerScreen.cs",
+              "RelativeDocumentMoniker": "Label Software\\DesignerScreen.cs",
+              "ToolTip": "C:\\Users\\ergos\\OneDrive\\Belgeler\\Label Designer App\\Label-Designer-App\\Label Software\\DesignerScreen.cs",
+              "RelativeToolTip": "Label Software\\DesignerScreen.cs",
+              "ViewState": "AQIAAHMAAAAAAAAAAAA1wKMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T09:24:55.671Z",
+              "EditorCaption": ""
             }
           ]
         }
